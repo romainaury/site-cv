@@ -2,6 +2,12 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 
+import Experience from '../views/Experience.vue';
+import Realisations from '../views/Realisations.vue';
+import Diplomes from '../views/Diplomes.vue';
+import Competences from '../views/Competences.vue';
+import Interets from '../views/Interets.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -9,6 +15,31 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
+  },
+  {
+    path: '/experience',
+    name: 'experience',
+    component: Experience,
+  },
+  {
+    path: '/realisations',
+    name: 'realisations',
+    component: Realisations,
+  },
+  {
+    path: '/diplomes',
+    name: 'diplomes',
+    component: Diplomes,
+  },
+  {
+    path: '/competences',
+    name: 'competences',
+    component: Competences,
+  },
+  {
+    path: '/interets',
+    name: 'interets',
+    component: Interets,
   },
   {
     path: '/about',
