@@ -1,27 +1,35 @@
 <template>
   <div class="comp">
     <h1>Compétences</h1>
-    <fleche/>
-    <h2>Langages</h2>
-    <img class="icones" src="../assets/code-icone.png" alt="">
+    <p class="intro">
+      Voici une liste non-exaustive des différents langages de programmation rencontrés au cours de mes expériences et de mes études, les frameworks que j'ai pu utiliser,
+      ainsi que les différents IDE qui m'ont permis de coder dans de bonnes conditions.
+    </p>
+    <fleche vref="Langages" />
+
+    <img class="icones" src="../assets/code-icone.png" alt />
+    <h2 id="Langages">Langages</h2>
     <div class="container skills">
       <langage class="s-Logo" alt="Logo c++" lang="language/c++" />
       <langage class="s-Logo" alt="Logo java" lang="language/java" />
       <langage class="s-Logo" alt="Logo sql server" lang="language/sql" />
       <langage class="s-Logo" alt="Logo html5" lang="language/html5" />
       <langage class="s-Logo" alt="Logo css3" lang="language/css3" />
+    </div>
+    <h2>Frameworks</h2>
+    <div class="container framework">
       <langage class="s-Logo" alt="Logo vuejs" lang="language/vuejs" />
     </div>
 
+    <img class="icones" src="../assets/software-icone.png" alt />
     <h2>Logiciels utilisés</h2>
-    <img class="icones" src="../assets/software-icone.png" alt="">
     <div class="container software">
       <langage class="s-Logo" alt="Logo eclipse" lang="software/eclipse" />
       <langage class="s-Logo" alt="Logo visual studio code" lang="software/vscode" />
       <langage class="s-Logo" alt="Logo visual studio" lang="software/vstudio" />
       <langage class="s-Logo" alt="Logo bluej" lang="software/bluej" />
     </div>
-    <fleche-inverse/>
+    <fleche-inverse />
   </div>
 </template>
 
@@ -34,9 +42,9 @@ export default {
   name: "Competences",
   el: "competences",
   components: {
-    'langage': Langage,
-    'fleche' : Fleche,
-    'fleche-inverse' : FlecheInverse,
+    langage: Langage,
+    fleche: Fleche,
+    "fleche-inverse": FlecheInverse
   }
 };
 </script>
@@ -51,7 +59,9 @@ export default {
   padding-bottom: 1em;
 }
 h1 {
-  margin: 0.7em 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 50px;
 }
 
 h2 {
@@ -81,14 +91,38 @@ h2 {
 .s-Logo {
   padding: 15px;
 }
+.icones:hover {
+  -webkit-transform: rotate(360deg) scale(1.15);
+  -moz-transform: rotate(360deg) scale(1.15);
+  -o-transform: rotate(360deg) scale(1.15);
+  -ms-transform: rotate(360deg) scale(1.15);
+  transform: rotate(360deg) scale(1.15);
+
+  background-color: rgba(0, 136, 169, 1);
+
+  transition: 0.3s;
+}
 
 .icones {
   width: 100px;
-  background-color: rgba(0, 136, 169, 1);
-  padding: 10px;
-  margin-bottom: 10px;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 1em;
+  margin-top: 1em;
   border-radius: 50%;
-  
+
+  transition: 0.4s;
+}
+
+.intro {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 2em auto;
+}
+@media only screen and (min-width: 624px) {
+  .container {
+    width: 624px;
+  }
 }
 
 @media only screen and (max-width: 500px) {

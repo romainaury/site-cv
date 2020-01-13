@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Experience</h1>
-    <fleche/>
-    <fleche-inverse/>
+    <fleche vref="Experience" />
+    <fleche-inverse />
   </div>
 </template>
 
@@ -14,11 +14,21 @@ export default {
   name: "experience",
   el: "Experience",
   components: {
-    'fleche': Fleche,
-    'fleche-inverse': FlecheInverse
+    fleche: Fleche,
+    "fleche-inverse": FlecheInverse
   }
 };
 </script>
 
 <style scoped>
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 50px;
+}
+.intro {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 2em auto;
+}
 </style>

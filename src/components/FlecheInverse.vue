@@ -1,20 +1,28 @@
 <template>
-    <a href="#nav">
-        <div class="click">
-          <img class="fleche" src="../assets/fleche.png" height="18" alt="Voir plus" />
-        </div>
-      </a>
+  <a href="#nav">
+    <div class="click">
+      <img class="fleche" src="../assets/fleche.png" height="18" alt="Voir plus" />
+    </div>
+  </a>
 </template>
 <style scoped>
-
-.fleche{
-  rotate: 180deg;
+.fleche {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   animation: up 1s infinite ease-out;
 }
 
 .click {
-  height: 3em;
-  margin-bottom: 7em;
+  height: 60px;
+  margin-top: 1em;
+  margin-bottom: 10em;
+}
+a {
+  z-index: 1;
+  width: 100%;
 }
 
 @keyframes up {

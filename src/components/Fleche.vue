@@ -1,23 +1,34 @@
 <template>
-    <a href="#footer">
-        <div class="click">
-          <img class="fleche" src="../assets/fleche.png" height="18" alt="Voir plus" />
-        </div>
-      </a>
+  <a  v-bind:href="'#' + vref">
+    <div class="click">
+      <img class="fleche" src="../assets/fleche.png" height="18" alt="Voir plus" />
+    </div>
+  </a>
 </template>
+<script>
+export default {
+  props: {
+    vref: String
+  },
+};
+</script>
 <style scoped>
-
-.fleche:not(.inverse){
+.fleche {
   animation: down 1s infinite ease-out;
 }
-.inverse {
-  rotate: 180deg;
-  animation: up 1s infinite ease-out;
 
-}
 .click {
-  height: 3em;
-  margin-bottom: 7em;
+  width: 100%;
+  height: 60px;
+
+  margin-top: 1em;
+  margin-bottom: 8em;
+  padding: auto;
+}
+
+a {
+  z-index: 1;
+  width: 100%;
 }
 
 @keyframes down {
@@ -35,23 +46,6 @@
     position: relative;
     top: 30px;
     opacity: 0;
-  }
-}
-@keyframes up {
-  0% {
-    position: relative;
-    top: 40px;
-    opacity: 0;
-  }
-  50% {
-    position: relative;
-    top: 25px;
-    opacity: 0.75;
-  }
-  100% {
-    position: relative;
-    top: 10px;
-    opacity: 1;
   }
 }
 </style>

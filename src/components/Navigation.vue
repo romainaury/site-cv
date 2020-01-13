@@ -35,6 +35,7 @@
         <router-link to="/experience">Expérience</router-link>
         <router-link to="/diplomes">Diplômes</router-link>
         <router-link to="/interets">Intérêts</router-link>
+        <router-link class="cta" to="/">Contact</router-link>
       </div>
     </div>
   </div>
@@ -84,6 +85,7 @@ header {
 .nav__links {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .nav__links li {
@@ -146,8 +148,8 @@ header {
   transition: all 0.2s ease 0s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay a:hover:not(.cta),
+.overlay a:focus:not(.cta) {
   color: #0088a9;
 }
 .overlay .close {
@@ -192,7 +194,8 @@ header {
   }
 }
 
-a.router-link-exact-active:not(.cta) {
+a.router-link-exact-active:not(.cta),
+a.router-link-active:not(.cta) {
   color: #0088a9;
 }
 </style>
