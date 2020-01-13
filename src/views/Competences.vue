@@ -3,7 +3,7 @@
     <h1>Compétences</h1>
     <p class="intro">
       Voici une liste non-exaustive des différents langages de programmation rencontrés au cours de mes expériences et de mes études, les frameworks que j'ai pu utiliser,
-      ainsi que les différents IDE qui m'ont permis de coder dans de bonnes conditions.
+      ainsi que les différents IDE qui m'ont permis de programmer dans de bonnes conditions.
     </p>
     <fleche vref="Langages" />
 
@@ -15,6 +15,7 @@
       <langage class="s-Logo" alt="Logo sql server" lang="language/sql" />
       <langage class="s-Logo" alt="Logo html5" lang="language/html5" />
       <langage class="s-Logo" alt="Logo css3" lang="language/css3" />
+      <langage class="s-Logo" alt="Logo css3" lang="language/python" />
     </div>
     <h2>Frameworks</h2>
     <div class="container framework">
