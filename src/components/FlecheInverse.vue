@@ -21,7 +21,6 @@
   margin-bottom: 10em;
 }
 a {
-  z-index: 1;
   width: 100%;
 }
 

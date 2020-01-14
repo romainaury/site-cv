@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <h1>Réalisations</h1>
     <p class="intro">
       Ici vous trouverez mes différentes réalisations avec un descriptif.
@@ -77,11 +77,6 @@ img {
   margin-left: 10px;
   transition: 0.1s;
   padding: 1em;
-
-  /* border-left: solid black 5px;
-  margin-left: 0;
-  padding-left: 1em;
-  border-radius: 1em; */
 }
 .description:hover {
   background-color: #eaeaea;

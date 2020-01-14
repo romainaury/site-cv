@@ -1,5 +1,5 @@
 <template>
-  <div class="comp">
+  <div class="comp page">
     <h1>Compétences</h1>
     <p class="intro">
       Voici une liste non-exaustive des différents langages de programmation rencontrés au cours de mes expériences et de mes études, les frameworks que j'ai pu utiliser,
@@ -59,10 +59,17 @@ export default {
 
   padding-bottom: 1em;
 }
+/* En-tête */
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 50px;
+}
+
+.intro {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 2em auto;
 }
 
 h2 {
@@ -71,6 +78,8 @@ h2 {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
+
+/* Contenu */
 .container {
   background: #eee;
   border-radius: 0.5em;
@@ -92,6 +101,18 @@ h2 {
 .s-Logo {
   padding: 15px;
 }
+
+/* Icones */
+.icones {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 50%;
+
+  transition: 0.4s;
+}
 .icones:hover {
   -webkit-transform: rotate(360deg) scale(1.15);
   -moz-transform: rotate(360deg) scale(1.15);
@@ -104,22 +125,7 @@ h2 {
   transition: 0.3s;
 }
 
-.icones {
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  border-radius: 50%;
 
-  transition: 0.4s;
-}
-
-.intro {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 2em auto;
-}
 @media only screen and (min-width: 624px) {
   .container {
     width: 624px;

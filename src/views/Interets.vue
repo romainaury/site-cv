@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <h1>Intérêts</h1>
     <p class="intro">Voici mes différents points d'intérêts.</p>
     <fleche vref="Interets" />
@@ -41,12 +41,21 @@
       <p>
         Linux est un OS (Operating System) basé sur UNIX. Depuis quelques années déjà j'utilise linux sur ma station de travail en OS principal.
         J'ai eu l'occasion de tester plusieurs distributions déjà telles que
-        <a href="https://ubuntu-fr.org/" target="_blank">Ubuntu</a>,
+        <a
+          href="https://ubuntu-fr.org/"
+          target="_blank"
+        >Ubuntu</a>,
         <a href="https://www.debian.org/" target="_blank">Debian</a>,
         <a href="https://archlinux.fr/" target="_blank">Archlinux</a>,
         <a href="https://neon.kde.org/" target="_blank">KDE Neon</a> ainsi que
         <a href="https://manjaro.org/" target="_blank">Manjaro</a>. Je suis actuellement muni de Manjaro i3. Ce que j'apprécie chez cet OS est sa
         légerté, le fait qu'il soit personnalisable, et sa maniabilité mais aussi ce que peu de gens ne savent, à part leurs utilisateurs, sa facilité d'utilisation.
+        <br />Je suis régulièrement des threads sur le réseau social Reddit, où les utilisateurs postent des images de leurs configurations, et y partagent leurs configurations :
+        <ul>
+          <li><a href="https://www.reddit.com/r/unixporn/" target="_blank">r/UnixPorn</a></li>
+          <li><a href="https://www.reddit.com/r/linux/" target="_blank">r/Linux</a></li>
+          <li><a href="https://www.reddit.com/r/linuxmasterrace/" target="_blank">r/LinuxMasterRace</a></li>
+        </ul>
       </p>
     </div>
     <fleche-inverse vref="Interets" />
@@ -87,12 +96,18 @@ ul {
 .container {
   width: 75%;
   margin: 2em auto;
+  padding: 10px;
+}
+.container:hover {
+  background-color: #f0f0f0;
+  transition: ease 0.2s;
 }
 .container h2 {
   font-size: 30px;
   margin-bottom: 1em;
 }
-.container p, li {
+.container p,
+li {
   font-size: 20px;
 }
 a {

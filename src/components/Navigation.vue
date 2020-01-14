@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <header>
       <router-link to="/" class="logo">
         <img src="../assets/logo.svg" heigth="34px" width="200px" />
@@ -29,7 +29,7 @@
     <div id="mobile__menu" class="overlay">
       <a class="close" v-on:click="closeNav()">&times;</a>
       <div class="overlay__content">
-        <router-link to="/">Accueil</router-link>
+        <router-link class="accueil" to="/">Accueil</router-link>
         <router-link to="/competences">Compétences</router-link>
         <router-link to="/realisations">Réalisations</router-link>
         <router-link to="/experience">Expérience</router-link>
@@ -65,7 +65,7 @@ header {
   padding: 30px 8%;
   background-color: #24252a;
 
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .logo {
@@ -94,7 +94,7 @@ header {
 }
 
 .nav__links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .nav__links li a:hover {
@@ -195,7 +195,7 @@ header {
 }
 
 a.router-link-exact-active:not(.cta),
-a.router-link-active:not(.cta) {
+a.router-link-active:not(.cta, .accueil) {
   color: #0088a9;
 }
 </style>

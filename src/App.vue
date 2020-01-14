@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <navigation id="nav" />
-    <router-view />
+    <transition >
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -40,5 +42,25 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/* Transition page */
+.view-enter-active,
+.view-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.view-enter-active {
+  transition-delay: .5s;
+}
+
+.view-enter,
+.view-leave-to {
+  opacity: 0;
+}
+
+.view-enter-to,
+.view-leave {
+  opacity: 1;
 }
 </style>

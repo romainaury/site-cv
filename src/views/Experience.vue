@@ -1,7 +1,15 @@
 <template>
-  <div>
+  <div class="page">
     <h1>Experience</h1>
+    <p>
+      Voici une liste de mes expériences dans le milieu du travail.
+      <br />Cette liste est vouée à évoluer.
+    </p>
     <fleche vref="Experience" />
+    <div class="container">
+      <h2>McDonald's</h2>
+      <p>À coté de mes études, je travaille actuellement dans au sein de l'enseigne McDonald's en temps qu'équipier polyvalent. Ce métier m'a permis de développer mes capacités de communication avec les clients, ainsi que mes compétences d'adaptation. J'ai aussi appris à travailler sous la pression, autant situationel que de la clientelle.</p>
+    </div>
     <fleche-inverse />
   </div>
 </template>
@@ -21,6 +29,8 @@ export default {
 </script>
 
 <style scoped>
+/* En-tête */
+
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
@@ -30,5 +40,15 @@ h1 {
   font-size: 20px;
   max-width: 900px;
   margin: 2em auto;
+}
+
+/* Contenu */
+
+.container {
+  max-width: 80%;
+  margin: 2em auto;
+}
+.container h2 {
+  margin: 1em;
 }
 </style>

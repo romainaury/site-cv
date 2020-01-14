@@ -1,13 +1,13 @@
 <template>
-  <div id="home">
+  <div class="home page">
     <header>
       <h1>ROMAIN AURY</h1>
-      <hr>
+      <hr />
       <span class="welcome">
         Bienvenue sur mon site internet
         <br />
       </span>
-      <fleche vref="informations"  />
+      <fleche vref="informations" />
     </header>
     <div id="informations">
       <h2>À propos de moi</h2>
@@ -58,25 +58,38 @@ export default {
 </script>
 
 <style scoped>
-hr {
-  align-self: center;
-  margin: 3em auto;
-
-  width: 50%;
-}
 .home {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
+
+/* En-tête */
 header {
   height: 29em;
 }
+hr {
+  align-self: center;
+  margin: 3em auto;
+  width: 50%;
+}
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 50px;
+  animation: half-fading 1s infinite linear alternate;
+}
+.welcome {
+  font-size: 25px;
+}
+
+/* Image de profile */
 img:not(.fleche) {
   margin: 2em 0;
   border-radius: 50%;
   border: solid rgba(0, 136, 169, 1) 5px;
   background: rgba(0, 136, 169, 1);
+  cursor: pointer;
   transition: 0.1s;
 }
 img:hover:not(.fleche) {
@@ -88,22 +101,20 @@ img:hover:not(.fleche) {
   transition: 0.2s;
 }
 
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 50px;
-  animation: half-fading 1s infinite linear alternate;
-}
+/** Profile */
 h2 {
   font-size: 35px;
   margin: 1em 0;
 }
-.welcome {
-  font-size: 25px;
-}
 
 table {
+  margin-top: 1em;
   margin: auto;
+}
+tr {
+  display: block;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 .attributes {
   text-align: left;
@@ -114,14 +125,6 @@ table {
 
 .footer {
   margin: 4em 0 3em 0;
-}
-table {
-  margin-top:1em;
-}
-tr {
-  display: block;
-  padding-top: .25em;
-  padding-bottom: .25em;
 }
 @keyframes half-fading {
   0% {
