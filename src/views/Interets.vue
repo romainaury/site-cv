@@ -7,7 +7,7 @@
       <h2>Informatique</h2>
       <p>
         Je suis passionné de l'informatique depuis tout petit. En effet, mon père travaillant dans l'informatique, je me suis vite découvert un intérêt pour
-        l'informatique et les nouvelles technologies en général. Voici une liste non-exhaustive des sites que je consulte régulièrement afin de m'informer sur les nouvelles sorties et différentes actualités :
+        l'informatique et les nouvelles technologies en général. Voici une liste exhaustive des sites que je consulte régulièrement afin de m'informer sur les nouvelles sorties et différentes actualités :
       </p>
       <ul>
         <li>
@@ -49,8 +49,8 @@
         <a href="https://archlinux.fr/" target="_blank">Archlinux</a>,
         <a href="https://neon.kde.org/" target="_blank">KDE Neon</a> ainsi que
         <a href="https://manjaro.org/" target="_blank">Manjaro</a>. Je suis actuellement muni de Manjaro i3. Ce que j'apprécie chez cet OS est sa
-        légerté, le fait qu'il soit personnalisable, et sa maniabilité mais aussi ce que peu de gens ne savent, à part leurs utilisateurs, sa facilité d'utilisation.
-        <br />Je suis régulièrement des threads sur le réseau social Reddit, où les utilisateurs postent des images de leurs configurations, et y partagent leurs configurations :
+        légerté, le fait qu'il soit personnalisable, sa maniabilité mais aussi sa facilité d'utilisation.
+        <br />Je suis régulièrement des threads sur le réseau social Reddit, où les utilisateurs postent et partagent des images de leurs configurations :
         <ul>
           <li><a href="https://www.reddit.com/r/unixporn/" target="_blank">r/UnixPorn</a></li>
           <li><a href="https://www.reddit.com/r/linux/" target="_blank">r/Linux</a></li>

@@ -7,8 +7,11 @@
     </p>
     <fleche vref="Experience" />
     <div class="container">
-      <h2>McDonald's</h2>
-      <p>À coté de mes études, je travaille actuellement dans au sein de l'enseigne McDonald's en temps qu'équipier polyvalent. Ce métier m'a permis de développer mes capacités de communication avec les clients, ainsi que mes compétences d'adaptation. J'ai aussi appris à travailler sous la pression, autant situationel que de la clientelle.</p>
+      <div>
+        <img height="100" src="../assets/entreprise/mcdonald.png" />
+        <h2>McDonald's</h2>
+      </div>
+      <p>À coté de mes études, je travaille actuellement dans au sein de l'enseigne McDonald's en temps qu'équipier polyvalent. Ce métier m'a permis de développer mes capacités de communication avec les clients, ainsi que mes compétences d'adaptation. J'ai aussi appris à travailler sous la pression.</p>
     </div>
     <fleche-inverse />
   </div>
@@ -45,8 +48,19 @@ h1 {
 /* Contenu */
 
 .container {
-  max-width: 80%;
+  max-width: 65%;
   margin: 2em auto;
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.container div img {
+  float: left;
+}
+.container div p {
+  text-align: center;
 }
 .container h2 {
   margin: 1em;

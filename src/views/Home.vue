@@ -27,7 +27,7 @@
           <tr>07 62 16 25 32</tr>
           <tr>romain.aury@hotmail.com</tr>
           <tr>Français</tr>
-          <tr>22/02/2000 MASSY (92)</tr>
+          <tr>22/02/2000 MASSY (91)</tr>
         </th>
       </table>
     </div>
