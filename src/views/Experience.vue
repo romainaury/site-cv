@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h1>Experience</h1>
-    <p>
+    <p class="intro">
       Voici une liste de mes expériences dans le milieu du travail.
       <br />Cette liste est vouée à évoluer.
     </p>
