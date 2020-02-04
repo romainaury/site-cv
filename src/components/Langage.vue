@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img height="150px" :src="getPathImg(lang)" />
+    <img :title="lang" height="150px" :src="getPathImg(lang)" />
   </div>
 </template>
 

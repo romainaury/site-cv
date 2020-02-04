@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .comp {
-  padding: 2em 1em 0 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  margin: 1em 0;
+  margin-bottom: 1em;
 
   font-weight: bold;
   font-family: "Montserrat", sans-serif;

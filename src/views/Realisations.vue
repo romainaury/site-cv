@@ -35,6 +35,7 @@ export default {
 </script>
 
 <style scoped>
+/* En tête */
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
