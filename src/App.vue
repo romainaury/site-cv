@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation id="nav" />
-    <transition >
+    <transition>
       <router-view />
     </transition>
   </div>
@@ -18,6 +18,23 @@ export default {
 </script>
 
 <style>
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 50px;
+}
+.intro {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+h2 {
+  margin-bottom: 1em;
+
+  font-weight: bold;
+}
+
 #app {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -51,7 +68,7 @@ nav {
 }
 
 .view-enter-active {
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
 .view-enter,

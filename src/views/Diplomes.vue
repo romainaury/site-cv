@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div id="diplomes" class="page">
     <h1>Diplômes</h1>
     <p class="intro">
       Voici une liste des mes différents diplômes obtenus au cours de mes études.
@@ -48,19 +48,10 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 50px;
-}
 h2 {
   font-size: 30px;
 }
-.intro {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 2em auto;
-}
+
 .diplomes {
   padding: 10px 5%;
   margin-bottom: 2em;

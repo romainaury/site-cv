@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div id="experience" class="page">
     <h1>Experience</h1>
     <p class="intro">
       Voici une liste de mes expériences dans le milieu du travail.
@@ -32,19 +32,6 @@ export default {
 </script>
 
 <style scoped>
-/* En-tête */
-
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 50px;
-}
-.intro {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 2em auto;
-}
-
 /* Contenu */
 
 .container {

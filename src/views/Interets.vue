@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div id="interets" class="page">
     <h1>Intérêts</h1>
     <p class="intro">Voici mes différents points d'intérêts.</p>
     <fleche vref="Interets" />
@@ -77,16 +77,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 50px;
-}
-.intro {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 2em auto;
-}
+
 ul {
   margin-top: 1em;
   margin-bottom: 1em;

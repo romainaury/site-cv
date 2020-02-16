@@ -194,9 +194,7 @@ header {
   }
 }
 
-a.router-link-exact-active:not(.cta),
-a.router-link-active:not(.cta) {
+a.router-link-exact-active:not(.cta) {
   color: #0088a9;
 }
-
 </style>

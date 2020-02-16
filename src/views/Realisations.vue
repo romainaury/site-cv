@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div id="realisations" class="page">
     <h1>Réalisations</h1>
     <p class="intro">
       Ici vous trouverez mes différentes réalisations avec un descriptif.
@@ -35,18 +35,6 @@ export default {
 </script>
 
 <style scoped>
-/* En tête */
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 50px;
-}
-.intro {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 2em auto;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -55,36 +43,36 @@ h1 {
 h2 {
   margin-bottom: 1em;
 }
-img {
-  margin: 0;
-}
-.affiche {
-  height: 510px;
-  transition: 0.1s;
-}
-.affiche:hover {
-  scale: 1.2;
-  transition: 0.18s;
+
+@media screen and (min-width: 1051px) {
+  .description {
+    flex-basis: 40%;
+
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10px;
+    transition: 0.1s;
+    padding: 1em;
+  }
+
+  .description:hover {
+    background-color: #eaeaea;
+    transition: 0.2s;
+  }
+  .affiche {
+    height: 510px;
+    transition: 0.1s;
+  }
+  .affiche:hover {
+    scale: 1.2;
+    transition: 0.18s;
+  }
 }
 
-.description {
-  flex-basis: 40%;
-
-  height: 510px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin-left: 10px;
-  transition: 0.1s;
-  padding: 1em;
-}
-.description:hover {
-  background-color: #eaeaea;
-  transition: 0.2s;
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .container {
     flex-direction: column;
     padding: 5%;
@@ -97,9 +85,6 @@ img {
   .affiche {
     width: 95%;
     height: auto;
-  }
-  .affiche:hover {
-    scale: 1;
   }
 }
 </style>

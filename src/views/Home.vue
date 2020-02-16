@@ -1,5 +1,5 @@
 <template>
-  <div class="home page">
+  <div id="home" class="home page">
     <header>
       <h1>ROMAIN AURY</h1>
       <hr />
@@ -79,9 +79,7 @@ h1 {
   font-size: 50px;
   animation: half-fading 1s infinite linear alternate;
 }
-h1:hover{
 
-}
 .welcome {
   font-size: 25px;
 }
