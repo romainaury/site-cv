@@ -23,6 +23,7 @@ h1 {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 50px;
+  text-transform: uppercase;
 }
 .intro {
   font-size: 20px;
@@ -32,7 +33,6 @@ h1 {
 
 h2 {
   margin-bottom: 1em;
-
   font-weight: bold;
 }
 
@@ -54,7 +54,6 @@ h2 {
   align-items: center;
 
   height: 30px;
-
   margin: auto;
 }
 

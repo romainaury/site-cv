@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="home page">
     <header>
-      <h1>ROMAIN AURY</h1>
+      <h1 class="title">ROMAIN AURY</h1>
       <hr />
       <span class="welcome">
         Bienvenue sur mon site internet
@@ -10,7 +10,7 @@
       <fleche vref="informations" />
     </header>
     <div id="informations">
-      <h2>À propos de moi</h2>
+      <h1>À propos de moi</h1>
       <img height="250" src="../assets/RomainA.jpg" alt="Romain Aury" />
       <table class="description">
         <th class="attributes">
@@ -53,7 +53,7 @@ export default {
   components: {
     fleche: Fleche,
     "fleche-inverse": FlecheInverse
-  }
+  },
 };
 </script>
 
@@ -73,7 +73,7 @@ hr {
   margin: 3em auto;
   width: 50%;
 }
-h1 {
+.title {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 50px;

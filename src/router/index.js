@@ -7,6 +7,7 @@ import Realisations from '../views/Realisations.vue';
 import Diplomes from '../views/Diplomes.vue';
 import Competences from '../views/Competences.vue';
 import Interets from '../views/Interets.vue';
+import Contact from '../views/Contact.vue';
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,11 @@ const routes = [
     path: '/interets',
     name: 'interets',
     component: Interets,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact,
   },
   // {
   //   path: '/about',

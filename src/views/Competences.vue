@@ -59,9 +59,13 @@ export default {
 
 /* Contenu */
 .container {
+  max-width: 624px;
+
   background: #eee;
   border-radius: 0.5em;
   border: solid #aaa 2px;
+
+  padding: 0.6em;
 
   display: flex;
   justify-content: center;
@@ -69,14 +73,10 @@ export default {
   align-items: center;
   flex-wrap: wrap;
 
-  max-width: 624px;
-
-  padding: 0.6em;
-
   transition: 0.3s;
 }
 
-.s-Logo {
+.container .s-Logo {
   padding: 15px;
   cursor: pointer;
 }
@@ -85,21 +85,23 @@ export default {
 .icones {
   width: 100px;
   height: 100px;
+
+  border-radius: 50%;
+
   padding: 5px;
   margin-bottom: 1em;
   margin-top: 1em;
-  border-radius: 50%;
 
   transition: 0.4s;
 }
 .icones:hover {
+  background-color: rgba(0, 136, 169, 1);
+
   -webkit-transform: rotate(360deg) scale(1.15);
   -moz-transform: rotate(360deg) scale(1.15);
   -o-transform: rotate(360deg) scale(1.15);
   -ms-transform: rotate(360deg) scale(1.15);
   transform: rotate(360deg) scale(1.15);
-
-  background-color: rgba(0, 136, 169, 1);
 
   transition: 0.3s;
 }
@@ -113,7 +115,6 @@ export default {
 @media only screen and (max-width: 500px) {
   .container {
     flex-direction: column;
-
     transition: 0.3s;
   }
 }

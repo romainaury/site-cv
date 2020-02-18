@@ -23,7 +23,7 @@
           </li>
         </ul>
       </nav>
-      <router-link class="cta" to="/">Contact</router-link>
+      <router-link class="cta" to="/contact">Contact</router-link>
       <p v-on:click="openNav()" class="menu cta">Menu</p>
     </header>
     <div id="mobile__menu" class="overlay">
@@ -35,7 +35,7 @@
         <router-link to="/experience">Expérience</router-link>
         <router-link to="/diplomes">Diplômes</router-link>
         <router-link to="/interets">Intérêts</router-link>
-        <router-link class="cta" to="/">Contact</router-link>
+        <router-link class="cta" to="/contact">Contact</router-link>
       </div>
     </div>
   </div>
