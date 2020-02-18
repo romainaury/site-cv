@@ -34,12 +34,15 @@ a {
   0% {
     position: relative;
     top: 0px;
+    opacity: 0;
+  }
+  25% {
     opacity: 1;
   }
   50% {
     position: relative;
     top: 15px;
-    opacity: 0.75;
+    opacity: 0.85;
   }
   100% {
     position: relative;

@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style>
+/*  Global css */
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
@@ -34,6 +35,8 @@ h2 {
 
   font-weight: bold;
 }
+
+/* END */
 
 #app {
   font-family: "Montserrat", sans-serif;
@@ -62,7 +65,7 @@ nav {
 }
 
 /* Transition page */
-.view-enter-active,
+/* .view-enter-active,
 .view-leave-active {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease;
 }
@@ -79,5 +82,5 @@ nav {
 .view-enter-to,
 .view-leave {
   opacity: 1;
-}
+} */
 </style>

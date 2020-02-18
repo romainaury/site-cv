@@ -12,7 +12,7 @@
     <div id="informations">
       <h2>À propos de moi</h2>
       <img height="250" src="../assets/RomainA.jpg" alt="Romain Aury" />
-      <table>
+      <table class="description">
         <th class="attributes">
           <tr>Nom :</tr>
           <tr>Adresse :</tr>

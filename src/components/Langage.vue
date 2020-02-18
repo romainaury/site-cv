@@ -1,9 +1,9 @@
 <template>
-  <div >
-    <span class="name">{{ getName() }}</span>
+  <div>
     <div class="module">
       <img :title="getName()" height="150px" :src="getPathImg(lang)" />
     </div>
+    <span class="name">{{ getName() }}</span>
   </div>
 </template>
 
@@ -40,18 +40,23 @@ export default {
 }
 
 .name {
-  scale: 0;
-  transition: .3s;
+  filter: opacity(0);
+  font-weight: bolder;
+  transition: 0.2s;
+}
+
+.module:hover ~ .name,
+.name:hover {
+  filter: opacity(1);
+  transition: 0.8s;
 }
 
 img {
-  filter: grayscale(0.9);
+  filter: grayscale(0.86);
   transition: 0.15s;
 }
 img:hover {
   filter: grayscale(0);
   transition: 0.2s;
 }
-
-
 </style>

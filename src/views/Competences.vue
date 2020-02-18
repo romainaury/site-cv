@@ -9,7 +9,7 @@
 
     <img class="icones" src="../assets/code-icone.png" alt />
     <h2 id="Langages">Langages</h2>
-    <div class="container skills">
+    <div class="container" id="languages">
       <langage class="s-Logo" alt="Logo c++" lang="language/c++" />
       <langage class="s-Logo" alt="Logo java" lang="language/java" />
       <langage class="s-Logo" alt="Logo sql server" lang="language/sql" />
@@ -18,13 +18,13 @@
       <langage class="s-Logo" alt="Logo css3" lang="language/python" />
     </div>
     <h2>Frameworks</h2>
-    <div class="container framework">
+    <div class="container" id="frameworks">
       <langage class="s-Logo" alt="Logo vuejs" lang="language/vuejs" />
     </div>
 
     <img class="icones" src="../assets/software-icone.png" alt />
     <h2>Logiciels utilisés</h2>
-    <div class="container software">
+    <div class="container" id="software">
       <langage class="s-Logo" alt="Logo eclipse" lang="software/eclipse" />
       <langage class="s-Logo" alt="Logo visual studio code" lang="software/vscode" />
       <langage class="s-Logo" alt="Logo visual studio" lang="software/vstudio" />
@@ -78,6 +78,7 @@ export default {
 
 .s-Logo {
   padding: 15px;
+  cursor: pointer;
 }
 
 /* Icones */
